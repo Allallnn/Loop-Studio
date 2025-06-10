@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   padding: 0;
@@ -10,14 +11,15 @@
   --White: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 0%);
   --Grey-200: hsl(0, 0%, 85%);
+  --ff-Alat: "Alat", sans-serif;
+  --ff-Josefin-Sans: "Josefin Sans", sans-serif;
 }
 
 body {
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   background-color: var(--White);
   color: var(--Black);
 }
-
 
 header {
   position: relative;
@@ -26,18 +28,24 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 100px;
-    width: 100vh;
+  width: 100%;
 }
 
 nav {
-    border: 1px solid green;
-      background: url("assets/desktop/Image20250607145109.jpg");
+  background: url("assets/desktop/Image20250607145109.jpg");
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 120rem;
+}
+h1 {
+  font-family: var(--ff-Alat);
+  font-weight: 400;
+}
+p {
+  font-family: var(--ff-Josefin-Sans);
+  font-weight: 300;
 }
 
 nav ul {
@@ -92,38 +100,47 @@ main {
   line-height: 1.8;
   color: var(--Black);
 }
-
-
-.main-img-list-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 100px 0 40px;
-}
-
-.main-img-list-div h2 {
-  font-size: 24px;
-}
-
-.main-img-list-div button {
-  font-size: 16px;
-  border: 1px solid var(--Black);
-  background: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
 .main-img-list {
+    border: 1px solid green;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 4rem;
+
+} 
+.main-img-list div {
+    display: flex;
+    align-items: end;
+    padding: 1rem;
+  /* width: 25%; */
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-.main-img-list img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
+#div-1 {
+  background-image: url(assets/desktop/Image20250607145119.jpg);
+}
+#div-2 {
+  background-image: url(assets/desktop/Image20250607145126.jpg);
+}
+#div-3 {
+    background-image: url(assets/desktop/Image20250607145117.jpg);
+
+}
+#div-4 {
+  background-image: url(assets/desktop/Image20250607145124.jpg);
+}
+#div-5 {
+  background-image: url(assets/desktop/Image20250607145111.jpg);
+}
+#div-6 {
+  background-image: url(assets/desktop/Image20250607145121.jpg);
+}
+#div-7 {
+  background-image: url(assets/desktop/Image20250607145132.jpg);
+}
+#div-8 {
+  background-image: url(assets/desktop/Image20250607145129.jpg);
 }
 
 footer {
@@ -135,7 +152,9 @@ footer {
   padding: 50px 100px;
   flex-wrap: wrap;
 }
-
+.footer-div-1 img {
+  width: 13rem;
+}
 .footer-div-1,
 .footer-div-2 {
   display: flex;
@@ -149,10 +168,21 @@ footer {
   gap: 30px;
   font-size: 16px;
 }
+.footer-div-1 li {
+  list-style: none;
+}
+.footer-div-1 ul {
+  display: flex;
+  gap: 1rem;
+}
+.footer-div-2 p {
+  opacity: 50%;
+}
 
 .footer-img-div {
+  width: 13rem;
   display: flex;
-  gap: 15px;
+  gap: 1rem;
 }
 /* Media Queary */
 @media (max-width: 428px) {
