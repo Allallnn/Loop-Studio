@@ -14,7 +14,6 @@
   --Grey-200: hsl(0, 0%, 85%);
   --ff-Alat: "Alata", sans-serif;
   --ff-Josefin-Sans: "Josefin Sans", sans-serif;
-  --gap: 2rem;
 }
 
 body {
@@ -30,12 +29,13 @@ header {
   background-size: cover;
   background-position: center;
   height: 80vh;
-  padding: 1rem 7rem;
+  padding: 2rem 7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: var(--White);
   font-family: var(--ff-Josefin-Sans);
+
 }
 
 nav {
@@ -51,7 +51,7 @@ nav h2 {
 nav ul {
   display: flex;
   list-style: none;
-  gap: var(--gap);
+  gap: 3rem;
 }
 
 nav ul li {
@@ -73,19 +73,37 @@ header h1 {
   padding: 4rem 2rem;
   align-items: center;
 }
-
+.main{
+  padding: 2rem;
+}
+.main-div-1 {
+padding: 2rem 0;
+}
 .main-div-1 img {
   max-width: 100%;
   height: auto;
 }
 
 .main-div-2 {
-  max-width: 500px;
+  display: flex ;
+  flex-direction: column;
+  max-width: 400px;
+  padding-left: 2rem;
+  background-color: var(--White);
+  z-index: 2;
+  position: absolute;
+  padding: 2rem;
+left : 40rem;
+top: 66rem;
 }
 
 .main-div-2 h1 {
+  font-size: 40px;
+  width: 45rem;
   font-family: var(--ff-Josefin-Sans);
   margin-bottom: 1rem;
+  z-index: 1;
+  position: relative;
 }
 
 .main-div-2 p {
@@ -106,7 +124,7 @@ header h1 {
   font-size: 2rem;
 }
 
-.main-img-list-div button {
+.main-img-list-div #button-1, #button-2 {
   padding: 0.5rem 1.5rem;
   font-family: var(--ff-Alat);
   background: none;
@@ -124,10 +142,11 @@ header h1 {
 .main-img-list div {
   position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 650px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end ;
   padding: 1rem;
 }
 
@@ -215,11 +234,33 @@ footer {
   font-size: 0.9rem;
   color: var(--Grey-200);
 }
-#menu-img{
+.logo-2{
   display: none;
 }
-
+#button-1{
+  display: block;
+}
+#button-2{
+  display: none;
+}
+.socials li {
+  list-style: none;
+}
+.socials{
+  display: flex;
+  gap: 1rem
+  ;
+}
 @media (max-width: 428px) {
+  #button-1{
+  display: none;
+}
+#button-2{
+  display: block;
+}
+  #menu-img{
+    display: block;
+  }
   header {
     padding: 1rem;
     height: 70vh;
@@ -227,7 +268,9 @@ footer {
     background-size: cover;
     background-position: center;
   }
-
+nav{
+  padding: 0;
+}
   nav ul {
     display: none; 
   }
@@ -255,6 +298,10 @@ footer {
   }
 
   .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
   }
 
@@ -285,8 +332,8 @@ footer {
   }
 
   .main-img-list div {
-    height: 250px;
-    background-size: cover;
+    height: 150px;
+    background-size: cover          ;
     background-position: center;
     display: flex;
     align-items: flex-end;
@@ -311,10 +358,15 @@ footer {
   }
 
   .footer-wrapper {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
   }
+  .footer-wrapper li{
+    padding: 0;                  
+  }
+
 
   .footer-left .socials ul {
     flex-direction: column;
@@ -322,17 +374,21 @@ footer {
   }
 
   .footer-right-div {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
   }
-
+.footer-right-div img{
+padding: 0 1rem;
+}
   .footer-right p {
     font-size: 0.8rem;
   }
 
   .socials ul {
     gap: 1rem;
+    display: flex;
+    align-items: center;
   }
   .footer-left {
 display: flex;
