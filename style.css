@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -23,19 +22,17 @@ body {
   line-height: 1.6;
 }
 
-
 header {
   background-image: url(assets/desktop/Image20250607145109.jpg);
   background-size: cover;
   background-position: center;
   height: 80vh;
-  padding: 2rem 7rem;
+  padding: 6rem 7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: var(--White);
   font-family: var(--ff-Josefin-Sans);
-
 }
 
 nav {
@@ -65,7 +62,6 @@ header h1 {
   padding: 1.5rem;
 }
 
-
 .vr-section {
   display: flex;
   flex-wrap: wrap;
@@ -73,19 +69,22 @@ header h1 {
   padding: 4rem 2rem;
   align-items: center;
 }
-.main{
-  padding: 2rem;
+
+.main {
+  padding: 6rem;
 }
+
 .main-div-1 {
-padding: 2rem 0;
+  padding: 2rem 0;
 }
+
 .main-div-1 img {
   max-width: 100%;
   height: auto;
 }
 
 .main-div-2 {
-  display: flex ;
+  display: flex;
   flex-direction: column;
   max-width: 400px;
   padding-left: 2rem;
@@ -93,8 +92,8 @@ padding: 2rem 0;
   z-index: 2;
   position: absolute;
   padding: 2rem;
-left : 40rem;
-top: 66rem;
+  left: 40rem;
+  top: 66rem;
 }
 
 .main-div-2 h1 {
@@ -110,7 +109,6 @@ top: 66rem;
   font-family: var(--ff-Alat);
 }
 
-
 .main-img-list-div {
   display: flex;
   justify-content: space-between;
@@ -124,7 +122,8 @@ top: 66rem;
   font-size: 2rem;
 }
 
-.main-img-list-div #button-1, #button-2 {
+.main-img-list-div #button-1,
+#button-2 {
   padding: 0.5rem 1.5rem;
   font-family: var(--ff-Alat);
   background: none;
@@ -146,7 +145,7 @@ top: 66rem;
   background-position: center;
   height: 650px;
   display: flex;
-  align-items: flex-end ;
+  align-items: flex-end;
   padding: 1rem;
 }
 
@@ -181,11 +180,10 @@ top: 66rem;
   background-image: url(assets/desktop/Image20250607145129.jpg);
 }
 
-
 footer {
   background-color: var(--Black);
   color: var(--White);
-  padding: 2rem 7rem;
+  padding: 6rem 7rem;
   font-family: var(--ff-Alat);
 }
 
@@ -234,33 +232,46 @@ footer {
   font-size: 0.9rem;
   color: var(--Grey-200);
 }
-.logo-2{
+
+.logo-2 {
   display: none;
 }
-#button-1{
+
+#button-1 {
   display: block;
 }
-#button-2{
+
+#button-2 {
   display: none;
 }
+
 .socials li {
   list-style: none;
 }
-.socials{
+
+.socials {
   display: flex;
-  gap: 1rem
-  ;
+  gap: 1rem;
 }
+
+.socials ul {
+  display: flex;
+  gap: 1rem;
+}
+
 @media (max-width: 428px) {
-  #button-1{
-  display: none;
-}
-#button-2{
-  display: block;
-}
-  #menu-img{
+  #button-1 {
+    display: none;
+  }
+
+  #button-2 {
     display: block;
   }
+
+  #img-menu {
+    display: block;
+  }
+
   header {
     padding: 1rem;
     height: 70vh;
@@ -268,11 +279,13 @@ footer {
     background-size: cover;
     background-position: center;
   }
-nav{
-  padding: 0;
-}
+
+  nav {
+    padding: 0;
+  }
+
   nav ul {
-    display: none; 
+    display: none;
   }
 
   nav img {
@@ -305,9 +318,15 @@ nav{
     padding: 1rem;
   }
 
+  .main-div-2 {
+    position: static;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
   .main-div-2 h1 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    font-size: 1.8rem;
+    width: 100%;
   }
 
   .main-div-2 p {
@@ -333,21 +352,37 @@ nav{
 
   .main-img-list div {
     height: 150px;
-    background-size: cover          ;
+    background-size: cover;
     background-position: center;
     display: flex;
     align-items: flex-end;
     padding: 1rem;
   }
 
-  #div-1 { background-image: url(assets/mobile/Image20250607144945.jpg); }
-  #div-2 { background-image: url(assets/mobile/Image20250607144951.jpg); }
-  #div-3 { background-image: url(assets/mobile/Image20250607144938.jpg); }
-  #div-4 { background-image: url(assets/mobile/Image20250607144934.jpg); }
-  #div-5 { background-image: url(assets/mobile/Image20250607144956.jpg); }
-  #div-6 { background-image: url(assets/mobile/Image20250607144943.jpg); }
-  #div-7 { background-image: url(assets/mobile/Image20250607144936.jpg); }
-  #div-8 { background-image: url(assets/mobile/Image20250607144940.jpg); }
+  #div-1 {
+    background-image: url(assets/mobile/Image20250607144945.jpg);
+  }
+  #div-2 {
+    background-image: url(assets/mobile/Image20250607144951.jpg);
+  }
+  #div-3 {
+    background-image: url(assets/mobile/Image20250607144938.jpg);
+  }
+  #div-4 {
+    background-image: url(assets/mobile/Image20250607144934.jpg);
+  }
+  #div-5 {
+    background-image: url(assets/mobile/Image20250607144956.jpg);
+  }
+  #div-6 {
+    background-image: url(assets/mobile/Image20250607144943.jpg);
+  }
+  #div-7 {
+    background-image: url(assets/mobile/Image20250607144936.jpg);
+  }
+  #div-8 {
+    background-image: url(assets/mobile/Image20250607144940.jpg);
+  }
 
   footer {
     padding: 2rem 1rem;
@@ -363,10 +398,10 @@ nav{
     align-items: center;
     gap: 2rem;
   }
-  .footer-wrapper li{
-    padding: 0;                  
-  }
 
+  .footer-wrapper li {
+    padding: 0;
+  }
 
   .footer-left .socials ul {
     flex-direction: column;
@@ -374,13 +409,15 @@ nav{
   }
 
   .footer-right-div {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-.footer-right-div img{
-padding: 0 1rem;
-}
+
+  .footer-right-div img {
+    padding: 0 1rem;
+  }
+
   .footer-right p {
     font-size: 0.8rem;
   }
@@ -389,12 +426,14 @@ padding: 0 1rem;
     gap: 1rem;
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
-  .footer-left {
-display: flex;
 
+  .footer-left {
+    display: flex;
   }
+
   .socials li {
-list-style: none;
+    list-style: none;
   }
 }
