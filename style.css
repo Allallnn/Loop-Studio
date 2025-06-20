@@ -35,6 +35,12 @@ header {
   font-family: var(--ff-Josefin-Sans);
 }
 
+p{
+  color: var(--Grey-200);
+}
+h1 {
+  font-weight: 300;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -56,16 +62,17 @@ nav ul li {
 }
 
 header h1 {
-  max-width: 450px;
-  font-size: 2.5rem;
+  line-height: 1  ;
+  width: 500px;
+  font-size: 4rem;
   border: 2px solid var(--White);
-  padding: 1.5rem;
+  padding: 2rem 0 2rem 2rem;
   margin: 5rem;
 }
 
 .h1-div{
-padding: 0;
-margin: 0;
+width: 60px;
+
 }
 
 .vr-section {
@@ -76,6 +83,7 @@ margin: 0;
 
 .main {
   padding: 6rem;
+  margin: 0 auto;
 }
 
 
