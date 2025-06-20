@@ -60,13 +60,17 @@ header h1 {
   font-size: 2.5rem;
   border: 2px solid var(--White);
   padding: 1.5rem;
+  margin: 5rem;
+}
+
+.h1-div{
+padding: 0;
+margin: 0;
 }
 
 .vr-section {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap);
-  padding: 4rem 2rem;
   align-items: center;
 }
 
@@ -95,6 +99,7 @@ header h1 {
 
 .main-div-2 h1 {
   font-size: 40px;
+  font-weight: 200; 
   width: 45rem;
   font-family: var(--ff-Josefin-Sans);
   margin-bottom: 1rem;
@@ -262,6 +267,7 @@ footer {
   display: none;
 }
 @media (max-width: 428px) {
+
   .logo-2 {
     display: block;
   }
@@ -300,9 +306,11 @@ footer {
   }
 
   .logo h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
-
+.logo {
+  width: 100%;
+}
   .logo-2 h1 {
     font-size: 1.8rem;
 
