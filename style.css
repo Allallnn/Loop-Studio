@@ -58,14 +58,14 @@ nav ul {
   gap: 3rem;
 }
 
-nav ul li {
+li {
   color: var(--White);
   cursor: pointer;
   position: relative;
   padding: 0.25rem 0;
 
 }
-nav ul li::after{
+li::after{
 content: "";
 position: absolute;
 bottom: 0;
@@ -76,7 +76,7 @@ background-color: var(--White);
 transform: translateX(-50%);
 transition: width 0.3s ease;
 }
-nav ul li:hover::after{
+li:hover::after{
   width: 50%;
 
 }
@@ -178,12 +178,15 @@ border: none;
   display: flex;
   align-items: flex-end;
   padding: 1rem;
+
 }
 
 .main-img-list div h2 {
   color: var(--White);
   font-family: var(--ff-Josefin-Sans);
-  font-size: 1.1rem;
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-align: start;
 }
 
 #div-1 {
@@ -210,7 +213,13 @@ border: none;
 #div-8 {
   background-image: url(assets/desktop/Image20250607145129.jpg);
 }
+.main-img-list div:hover{
+  opacity: 25%;
 
+}
+.main-img-list div h2:hover{
+    color: red;
+}
 footer {
   background-color: var(--Black);
   color: var(--White);
@@ -294,6 +303,21 @@ footer {
 }
 #menu-img {
   display: none;
+}
+
+#button-1,
+#button-2 {
+  padding: 0.5rem 1.5rem;
+  font-family: var(--ff-Alat);
+  color: var(--Black);
+  border: none;
+}
+
+#button-1:hover,
+#button-2:hover {
+  cursor: pointer;
+  background-color: var(--Black);
+  color: white;
 }
 
 @media (max-width: 428px) {
@@ -426,6 +450,7 @@ footer {
   #div-8 {
     background-image: url(assets/mobile/Image20250607144940.jpg);
   }
+
 
   footer {
     padding: 2rem 1rem;
